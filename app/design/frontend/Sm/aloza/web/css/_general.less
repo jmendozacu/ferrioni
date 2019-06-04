@@ -1962,12 +1962,21 @@ legend {
 /* ---------------------------------------------------------- j-styles ---------------------------------------------------------- */
 
 /*HEADER*/
-.logo-wrapper {
-    width: 260px !important;
+@media (min-width: 768px) {
+    .logo-wrapper .logo-content img {
+        width: 100% !important;
+    }
 }
 
-.logo-wrapper .logo-content img {
-    width: 260px !important;
+@media (min-width: 375px) {
+    .logo-wrapper .logo-content img {
+        width: 42% !important;
+    }
+}
+
+.header-style-1 .header-bottom .logo-content {
+    font-size: 0;
+    margin: 14px 0;
 }
 
 
