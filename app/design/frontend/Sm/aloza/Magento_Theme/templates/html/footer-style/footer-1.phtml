@@ -14,23 +14,26 @@ $_config = $this->helper('Sm\Aloza\Helper\Data');
 		<div class="container">
 			<div class="footer-top">
 				<div class="row">
-					<div class="col-md-4 col-sm-12 col-xs-12 about-footer">
+					<div class="col-md-3 col-sm-12 col-xs-12 about-footer">
 						<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('block-about-ft')->toHtml(); ?>
 					</div>
 					
-					<div class="col-md-4 col-sm-6 col-xs-12 inner-ft">
+					<div class="col-md-5 col-sm-6 col-xs-12 inner-ft">
 						<div class="row">
-							<div class="col-sm-6">
+							<div class="col-sm-4">
+								<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('block-company-ft')->toHtml(); ?>
+							</div>
+							<div class="col-sm-4">
 								<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('block-link-ft')->toHtml(); ?>
 							</div>
-							<div class="col-sm-6">
+							<div class="col-sm-4">
 								<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('block-information-ft')->toHtml(); ?>
 							</div>
 						</div>
 					
 					</div>
 					
-					<div class="col-md-4 col-sm-6 col-xs-12 block-socials">
+					<div class="col-md-3 col-sm-6 col-xs-12 block-socials">
 						<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('block-newletter-ft')->toHtml(); ?>
 						
 					</div>
