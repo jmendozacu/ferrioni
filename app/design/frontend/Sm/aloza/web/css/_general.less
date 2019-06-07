@@ -107,7 +107,7 @@ label,
 }
 
 ul {
-    list-style: none;
+    /*list-style: none;*/
     margin: 0;
     padding: 0;
 }
@@ -1512,12 +1512,14 @@ legend {
 // BREADCRUMBS
 
 .breadcrumbs {
-  padding: 120px 0 ;
-  margin-bottom: 0;
-  margin: 0px 0 45px;
-  color: #fff;
-  text-align: center;
-  background: url("../images/breadcrumbs.jpg") no-repeat  center top;
+    padding: 120px 0;
+    margin-bottom: 0;
+    margin: 0px 0 45px;
+    color: #fff;
+    text-align: center;
+    background-size: cover !important;
+    background-position: right !important;
+    background: url(https://scontent.fmex8-2.fna.fbcdn.net/v/t31.0-8/16836356_1349054021826110_…nc_ht=scontent.fmex8-2.fna&oh=483590b…&oe=5D9C7F10) no-repeat center top;
   .current-name {
      color: #222222;
     display: block;
@@ -1535,7 +1537,7 @@ legend {
       padding: 0 12px ;
       &:after{display:none !important;}
       &:not(:last-child)::before {
-         color: #999999;
+         color: #022e5b;
         content: "|";
         display: inline-block;
         height: 5px;
@@ -1547,14 +1549,14 @@ legend {
       a{
         display: block;
         text-decoration: none;
-        color: #999999;
+        color: #022e5b;
          font-weight: normal;
 
       }
 
       strong {
         font-weight: normal;
-        color: #999999;
+        color: #022e5b;
       }
 
   
@@ -2062,13 +2064,20 @@ legend {
     color: rgb(29, 29, 29) !important
 }
 
+.breadcrumbs .container {
+    width: 400px !important;
+    background-color: #ffffff8a !important;
+}
+
 /* ----------------------------------- DETALLE PRODUCTO CONFIGURABLE ----------------------------------- */
 .tab-label-customtab{
     display: none;
 }
 
 
-
+/* ----------------------------------- DETALLE PRODUCTO ----------------------------------- */
 #block-shipping, .cart-summary .summary.title{
     display: none !important;
 }
+
+
