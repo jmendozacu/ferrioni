@@ -403,9 +403,9 @@ textarea {
 
     }
     &:hover{
-        background: none;
-        color: #022e5b;
-        border: 2px solid #022e5b;
+        background: #022e5bdb;
+        color: white;
+        border: none;
     }
 }
 
@@ -2047,6 +2047,12 @@ legend {
     margin: 25px;
 }
 
+@media (min-width: 768px){
+    .footer-container .footer-block .form.subscribe .input-box input {
+        padding-left: 0px !important;
+    }
+}
+
 /*accordion*/
 
 @media (min-width: 768px){
@@ -2112,16 +2118,24 @@ legend {
       transition: all .35s;
     }
     input[type=checkbox] + label::after {
-      content: "+";
+        content: '\f0d7';
+        font-family: FontAwesome;
+        margin-top: -7px;
     }
     input[type=radio] + label::after {
-      content: "+";
+        content: '\f0d7';
+        font-family: FontAwesome;
+        margin-top: -7px;
     }
     input[type=checkbox]:checked + label::after {
-      content: "-";
+        content: '\f0de';
+        font-family: FontAwesome;
+        margin-top: -7px;
     }
     input[type=radio]:checked + label::after {
-      content: "-";
+        content: '\f0de';
+        font-family: FontAwesome;
+        margin-top: -7px;
     }
 
 }
@@ -2160,3 +2174,9 @@ legend {
 }
 
 
+/* ----------------------------------- BREADCRUMBS ----------------------------------- */
+@media only screen and (max-width: 768px){
+    .breadcrumbs {
+        background-size: contain !important;
+    }
+}
