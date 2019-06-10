@@ -828,12 +828,12 @@
         time: {
             Days: {
                 show: true,
-                text: "Days",
+                text: "Días",
                 color: "#ff3232"
             },
             Hours: {
                 show: true,
-                text: "Hours",
+                text: "Horas",
                 color: "#ff3232"
             },
             Minutes: {
@@ -843,7 +843,7 @@
             },
             Seconds: {
                 show: true,
-                text: "Secs",
+                text: "Segs",
                 color: "#ff3232"
             }
         }
