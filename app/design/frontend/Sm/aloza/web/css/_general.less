@@ -2047,6 +2047,85 @@ legend {
     margin: 25px;
 }
 
+/*accordion*/
+
+@media (min-width: 768px){
+    .tab input{
+        display: none;
+    }
+}
+
+@media (max-width: 767px){
+
+    /* Accordion  styles */
+    .footer-block-title{
+      padding-top: 10px !important;
+      background: white;
+    }
+    .tab {
+      position: relative;
+      margin-bottom: 1px;
+      width: 100%;
+      overflow: hidden;
+    }
+    input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+    label {
+      position: relative;
+      display: block;
+      padding: 0 0 0 1em;
+      background: #eeeeee;
+      font-weight: bold;
+      line-height: 3;
+      cursor: pointer;
+    }
+    .tab-content {
+      max-height: 0;
+      overflow: hidden;
+      background: #ffffff !important;
+      -webkit-transition: max-height .35s;
+      -o-transition: max-height .35s;
+      transition: max-height .35s;
+    }
+    .tab-content p {
+      margin: 1em;
+    }
+    /* :checked */
+    input:checked ~ .tab-content {
+      max-height: 10em;
+    }
+    /* Icon */
+    label::after {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 3em;
+      height: 3em;
+      line-height: 3;
+      text-align: center;
+      -webkit-transition: all .35s;
+      -o-transition: all .35s;
+      transition: all .35s;
+    }
+    input[type=checkbox] + label::after {
+      content: "+";
+    }
+    input[type=radio] + label::after {
+      content: "+";
+    }
+    input[type=checkbox]:checked + label::after {
+      content: "-";
+    }
+    input[type=radio]:checked + label::after {
+      content: "-";
+    }
+
+}
+
 /* ----------------------------------- LISTADOS DE PRODUCTOS ----------------------------------- */
 .products-grid .item .item-inner .box-image .bottom-action .btn-action:hover {
     background-color: #009B3E !important;
