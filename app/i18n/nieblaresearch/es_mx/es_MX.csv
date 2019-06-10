@@ -2179,7 +2179,7 @@ Save,Guardar,module,Magento_Customer
 "Registered Customers","Clientes Registrados",module,Magento_Customer
 "If you have an account, sign in with your email address.","Si tiene una cuenta, ingrese con su dirección de email.",module,Magento_Customer
 Password,Contraseña,module,Magento_Customer
-"Forgot Your Password?","¿Olvidó su contraseña?",module,Magento_Customer
+"Forgot Your Password?","¿Olvidaste tu contraseña?",module,Magento_Customer
 "Subscription option","Opción de suscripción",module,Magento_Customer
 "General Subscription","Suscripción General",module,Magento_Customer
 "Sign Up for Newsletter","Suscribirse al Boletín",module,Magento_Customer
@@ -3920,7 +3920,8 @@ Customers,Clientes,module,Magento_Reports
 ID,ID,module,Magento_Reports
 "First Name","Nombre",module,Magento_Reports
 "Last Name","Apellido",module,Magento_Reports
-"Items in Cart","Elementos en Carrito",module,Magento_Reports
+"Items in Cart","Artículos en el carrito",module,Magento_Reports
+"Item in Cart","Artículo en el carrito"
 "Products in carts","Productos en carritos",module,Magento_Reports
 Carts,Carritos,module,Magento_Reports
 Name,Nombre,module,Magento_Reports
@@ -8601,3 +8602,7 @@ Delete,Borrar,module,Magento_Wishlist
 "Address Book","Libreta de Direcciones",theme,frontend/Magento/luma
 "You aren't subscribed to our newsletter.","Aun no estás suscrito a nuestro boletín"
 "Minimum length of this field must be equal or greater than 8 symbols. Leading and trailing spaces will be ignored.","La longitud mínima de este campo debe ser igual o mayor a 8 símbolos. Los espacios iniciales y finales serán ignorados."
+"Item was updated successfully.","Actualizado correctamente"
+"Item was removed successfully.","Removido correctamente"
+"Are you sure you would like to remove this item from the shopping cart?", "¿Estás seguro que quieres quitar este artículo del carrito?"
+
