@@ -2047,16 +2047,11 @@ legend {
     margin: 25px;
 }
 
-@media (min-width: 768px){
-    .footer-container .footer-block .form.subscribe .input-box input {
-        padding-left: 0px !important;
-    }
-}
 
 /*accordion*/
 
 @media (min-width: 768px){
-    .tab input{
+    #colapsable .tab input{
         display: none;
     }
 }
@@ -2064,22 +2059,22 @@ legend {
 @media (max-width: 767px){
 
     /* Accordion  styles */
-    .footer-block-title{
+    #colapsable .footer-block-title{
       padding-top: 10px !important;
       background: white;
     }
-    .tab {
+    #colapsable .tab {
       position: relative;
       margin-bottom: 1px;
       width: 100%;
       overflow: hidden;
     }
-    input {
+    #colapsable input {
       position: absolute;
       opacity: 0;
       z-index: -1;
     }
-    label {
+    #colapsable label {
       position: relative;
       display: block;
       padding: 0 0 0 1em;
@@ -2088,7 +2083,7 @@ legend {
       line-height: 3;
       cursor: pointer;
     }
-    .tab-content {
+    #colapsable .tab-content {
       max-height: 0;
       overflow: hidden;
       background: #ffffff !important;
@@ -2096,15 +2091,15 @@ legend {
       -o-transition: max-height .35s;
       transition: max-height .35s;
     }
-    .tab-content p {
+    #colapsable .tab-content p {
       margin: 1em;
     }
     /* :checked */
-    input:checked ~ .tab-content {
+    #colapsable input:checked ~ .tab-content {
       max-height: 10em;
     }
     /* Icon */
-    label::after {
+    #colapsable label::after {
       position: absolute;
       right: 0;
       top: 0;
@@ -2117,25 +2112,29 @@ legend {
       -o-transition: all .35s;
       transition: all .35s;
     }
-    input[type=checkbox] + label::after {
+    #colapsable input[type=checkbox] + label::after {
         content: '\f0d7';
         font-family: FontAwesome;
         margin-top: -7px;
+        font-size: 18px;
     }
-    input[type=radio] + label::after {
+    #colapsable input[type=radio] + label::after {
         content: '\f0d7';
         font-family: FontAwesome;
         margin-top: -7px;
+        font-size: 18px;
     }
-    input[type=checkbox]:checked + label::after {
+    #colapsable input[type=checkbox]:checked + label::after {
         content: '\f0de';
         font-family: FontAwesome;
         margin-top: -7px;
+        font-size: 18px;
     }
-    input[type=radio]:checked + label::after {
+    #colapsable input[type=radio]:checked + label::after {
         content: '\f0de';
         font-family: FontAwesome;
         margin-top: -7px;
+        font-size: 18px;
     }
 
 }
