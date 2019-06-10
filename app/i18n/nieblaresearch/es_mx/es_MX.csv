@@ -2133,6 +2133,7 @@ Change,Cambiar,module,Magento_Customer
 "Change Password","Cambiar Contraseña",module,Magento_Customer
 Newsletters,"Boletines",module,Magento_Customer
 "You subscribe to ""General Subscription"".","Está inscrito a ""Suscripción General"".",module,Magento_Customer
+"You are subscribed to ""General Subscription"".","Estás inscrito a nuestro boletín.",module,Magento_Customer
 or,o,module,Magento_Customer
 "Default Addresses","Direcciones por Defecto",module,Magento_Customer
 "Change Billing Address","Cambiar Dirección de Facturación",module,Magento_Customer
