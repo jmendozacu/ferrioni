@@ -49,6 +49,11 @@ $menuType     = $_config->getGeneral('menu_style');
                     <?php /* @escapeNotVerified */
 					echo $_menu; ?>
                 </ul>
+
+                <div>
+                    <?php echo $block->getChildHtml('search-header'); ?>
+                </div>
+
             </nav>
 
             <script type="text/javascript">
@@ -75,9 +80,6 @@ $menuType     = $_config->getGeneral('menu_style');
 
 		<?php if ($menuType == 'megamenu') { ?>
             <nav id="navigation-mobile" class="navigation-mobile">
-                <div>
-                    <?php echo $block->getHtml('search-header'); ?>
-                </div>
             </nav>
             <script type="text/javascript">
                 require([
@@ -96,9 +98,6 @@ $menuType     = $_config->getGeneral('menu_style');
                     <?php /* @escapeNotVerified */
 					echo $_menu; ?>
                 </ul>
-                <div>
-                    <?php echo $block->getHtml('search-header'); ?>
-                </div>
             </nav>
 
             <script type="text/javascript">
