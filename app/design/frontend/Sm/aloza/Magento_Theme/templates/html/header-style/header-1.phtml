@@ -96,9 +96,11 @@
 	
 	function stickyNav() {
 	  if (window.pageYOffset >= sticky) {
-	    navbar.classList.add("sticky-nav" + "" + "fadeInDown")
+	    navbar.classList.add("sticky-nav");
+		navbar.classList.add("fadeInDown");
 	  } else {
-	    navbar.classList.remove("sticky-nav" + "" + "fadeInDown");
+	    navbar.classList.remove("sticky-nav");
+		navbar.classList.add("fadeInDown");
 	  }
 	}
 </script>
