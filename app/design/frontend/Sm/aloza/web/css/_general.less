@@ -1971,15 +1971,27 @@ legend {
 
 
 /* ----------------------------------- HEADER ----------------------------------- */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
     .logo-wrapper .logo-content img {
         width: 100% !important;
     }
+
+    .logo-header-responsive-2, .icons-header-responsive-2{
+        display: none;
+    }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 768px) {
     .logo-wrapper .logo-content img {
-        width: 42% !important;
+        width: 50% !important;
+    }
+
+    .logo-header-responsive-1, .icons-header-responsive-1, .search-mobile{
+        display: none;
+    }
+
+    .logo-header-responsive-2{
+        text-align: -webkit-center;
     }
 }
 
@@ -1994,9 +2006,42 @@ legend {
     width: 100%;
     background-color: white;
     z-index: 999;
-    height: 72px;
-    transition: .5s ease;
+    height: 85px;
+    transition: .2s ease;
 }
+
+@-webkit-keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
 
 /* ----------------------------------- BOX CATEGORIAS EN NAV ----------------------------------- */
 .sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu li:nth-child(1) .sm_megamenu_dropdown_6columns {
