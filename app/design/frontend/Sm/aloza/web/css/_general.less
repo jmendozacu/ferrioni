@@ -1981,7 +1981,7 @@ legend {
     }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 425px) and (max-width: 768px) {
     .logo-wrapper .logo-content img {
         width: 50% !important;
     }
@@ -1999,6 +1999,31 @@ legend {
     margin: 14px 0 !important;
 }
 
+@media (min-width: 320px) and (max-width: 425px) {
+    .logo-header-responsive-1, .icons-header-responsive-1, .search-mobile{
+        display: none;
+    }
+
+    .logo-header-responsive-2{
+        text-align: -webkit-center;
+    }
+
+    .row-items{
+        display: flex;
+        align-items: center;
+    }
+    .navigation-mobile-container{
+        padding-top: 6px;
+    }
+
+    .logo-wrapper .logo-content img {
+        width: 70% !important;
+    }
+
+    .icons-header-responsive-2{
+        padding-top: 15px; 
+    }
+}
 
 .sticky-nav{
     position: fixed;

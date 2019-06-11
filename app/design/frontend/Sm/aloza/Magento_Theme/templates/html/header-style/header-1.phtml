@@ -16,7 +16,7 @@
 	</div>
 	<div class="header-bottom" id="sticky-nav">
 		<div class="container">
-			<div class="row">
+			<div class="row row-items">
 
 				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 col-phone-12 logo-header logo-header-responsive-1">
 					<?php echo $block->getChildHtml('logo-header'); ?>
@@ -38,7 +38,7 @@
 				</div>
 
 				<!-- REACOMODO EN TABLET Y MOBILE -->
-				<div class="col-lg-3 col-md-3 col-sm-8 col-xs-12 col-phone-12 logo-header logo-header-responsive-2">
+				<div class="col-lg-3 col-md-3 col-sm-8 col-xs-7 col-phone-7 logo-header logo-header-responsive-2">
 					<?php echo $block->getChildHtml('logo-header'); ?>
 				</div>
 				<!-- REACOMODO EN TABLET Y MOBILE -->
@@ -61,7 +61,7 @@
 				</div>
 
 				<!-- REACOMODO EN TABLET Y MOBILE -->
-				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-10 icons-header-responsive-2">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 icons-header-responsive-2">
 					<div class="inner-setting-right">
 						<div class="header-search search-mobile">
 							<?php echo $block->getChildHtml('search-header'); ?>
@@ -96,9 +96,9 @@
 	
 	function stickyNav() {
 	  if (window.pageYOffset >= sticky) {
-	    navbar.classList.add("sticky-nav" + "fadeInDown")
+	    navbar.classList.add("sticky-nav" + "" + "fadeInDown")
 	  } else {
-	    navbar.classList.remove("sticky-nav");
+	    navbar.classList.remove("sticky-nav" + "" + "fadeInDown");
 	  }
 	}
 </script>
