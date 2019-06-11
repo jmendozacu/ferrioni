@@ -44,7 +44,7 @@ $menuType     = $_config->getGeneral('menu_style');
             </script>
         <?php } else { ?>
             
-            <nav id="navigation-mobile" class="navigation-mobile">
+            <nav id="navigation-mobile j" class="navigation-mobile">
                 <ul>
                     <?php /* @escapeNotVerified */
 					echo $_menu; ?>
@@ -97,6 +97,9 @@ $menuType     = $_config->getGeneral('menu_style');
                     <?php /* @escapeNotVerified */
 					echo $_menu; ?>
                 </ul>
+                <div>
+                    <?php echo $block->getChildHtml('search-header'); ?>
+                </div>
             </nav>
 
             <script type="text/javascript">
