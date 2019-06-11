@@ -49,6 +49,11 @@ $menuType     = $_config->getGeneral('menu_style');
                     <?php /* @escapeNotVerified */
 					echo $_menu; ?>
                 </ul>
+
+                <div>
+                    <?php echo $block->getChildHtml('search-header'); ?>
+                </div>
+
             </nav>
 
             <script type="text/javascript">
