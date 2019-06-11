@@ -14,12 +14,14 @@
 	</div>
 		
 	</div>
-	<div class="header-bottom">
+	<div class="header-bottom" id="sticky-nav">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 col-phone-12 logo-header">
+			<div class="row row-items">
+
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 col-phone-12 logo-header logo-header-responsive-1">
 					<?php echo $block->getChildHtml('logo-header'); ?>
 				</div>
+
 				<div class="col-lg-7 col-md-7 col-sm-2 col-xs-2">
 					<div class="main-menu">
 	 					<?php
@@ -34,25 +36,48 @@
 					<?php echo $block->getChildHtml('navigation.mobile'); ?>
 				</div>
 				</div>
-				<div class="col-lg-2 col-md-2 col-sm-6 col-xs-10">
+
+				<!-- REACOMODO EN TABLET Y MOBILE -->
+				<div class="col-lg-3 col-md-3 col-sm-8 col-xs-7 col-phone-7 logo-header logo-header-responsive-2">
+					<?php echo $block->getChildHtml('logo-header'); ?>
+				</div>
+				<!-- REACOMODO EN TABLET Y MOBILE -->
+
+				<div class="col-lg-2 col-md-2 col-sm-6 col-xs-10 icons-header-responsive-1">
 					<div class="inner-setting-right">
-						<div class="header-search">
+						<div class="header-search search-mobile">
 							<?php echo $block->getChildHtml('search-header'); ?>
 						</div>	
 						<div class="my-accounts top-drop">
-								<?php echo $block->getChildHtml('toplinks-header'); ?>
+							<?php echo $block->getChildHtml('toplinks-header'); ?>
 						</div>
 						
 						<div class="minicart-header">
-								<div class="minicart-content">
-									<?php echo $block->getChildHtml('cart-header'); ?>
-								</div>
-						</div>
-
-						
-					</div>
-					
+							<div class="minicart-content">
+								<?php echo $block->getChildHtml('cart-header'); ?>
+							</div>
+						</div>	
+					</div>	
 				</div>
+
+				<!-- REACOMODO EN TABLET Y MOBILE -->
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 icons-header-responsive-2">
+					<div class="inner-setting-right">
+						<div class="header-search search-mobile">
+							<?php echo $block->getChildHtml('search-header'); ?>
+						</div>	
+						<div class="my-accounts top-drop">
+							<?php echo $block->getChildHtml('toplinks-header'); ?>
+						</div>
+						
+						<div class="minicart-header">
+							<div class="minicart-content">
+								<?php echo $block->getChildHtml('cart-header'); ?>
+							</div>
+						</div>	
+					</div>	
+				</div>
+				<!-- REACOMODO EN TABLET Y MOBILE -->
 				
 				
 			</div>
@@ -60,3 +85,22 @@
 	</div>
 
 </div>
+
+<script>
+	window.onscroll = function() {
+		stickyNav()
+		};
+	
+	var navbar = document.getElementById("sticky-nav");
+	var sticky = navbar.offsetTop;
+	
+	function stickyNav() {
+	  if (window.pageYOffset >= sticky) {
+	    navbar.classList.add("sticky-nav");
+		navbar.classList.add("fadeInDown");
+	  } else {
+	    navbar.classList.remove("sticky-nav");
+		navbar.classList.add("fadeInDown");
+	  }
+	}
+</script>

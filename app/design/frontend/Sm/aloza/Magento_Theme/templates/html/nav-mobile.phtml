@@ -44,7 +44,7 @@ $menuType     = $_config->getGeneral('menu_style');
             </script>
         <?php } else { ?>
             
-            <nav id="navigation-mobile" class="navigation-mobile">
+            <nav id="navigation-mobile j" class="navigation-mobile">
                 <ul>
                     <?php /* @escapeNotVerified */
 					echo $_menu; ?>
@@ -74,7 +74,11 @@ $menuType     = $_config->getGeneral('menu_style');
 		</div>
 
 		<?php if ($menuType == 'megamenu') { ?>
-            <nav id="navigation-mobile" class="navigation-mobile"></nav>
+            <nav id="navigation-mobile" class="navigation-mobile">
+                <div>
+                    <?php echo $block->getHtml('search-header'); ?>
+                </div>
+            </nav>
             <script type="text/javascript">
                 require([
                     'jquery'
@@ -92,6 +96,9 @@ $menuType     = $_config->getGeneral('menu_style');
                     <?php /* @escapeNotVerified */
 					echo $_menu; ?>
                 </ul>
+                <div>
+                    <?php echo $block->getHtml('search-header'); ?>
+                </div>
             </nav>
 
             <script type="text/javascript">

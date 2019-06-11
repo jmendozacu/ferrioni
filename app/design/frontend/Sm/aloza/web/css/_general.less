@@ -107,7 +107,7 @@ label,
 }
 
 ul {
-    list-style: none;
+    /*list-style: none;*/
     margin: 0;
     padding: 0;
 }
@@ -403,7 +403,9 @@ textarea {
 
     }
     &:hover{
-        background: #222;
+        background: #022e5bdb;
+        color: white;
+        border: none;
     }
 }
 
@@ -757,7 +759,7 @@ mark, .mark {
             line-height:40px;
             background: #ff3232;
             &.checkout {
-                background: #cccccc;
+                background: #022E5B;
                 color: #fff;
             }
            
@@ -913,8 +915,8 @@ mark, .mark {
 .products.wrapper.products-grid {
     .item {
         float: left;
-        padding-left: 15px;
-        padding-right: 15px;
+        /*padding-left: 15px;
+        padding-right: 15px;*/
     }
 }
 
@@ -1509,13 +1511,15 @@ legend {
 
 // BREADCRUMBS
 
-.breadcrumbs {
-  padding: 120px 0 ;
-  margin-bottom: 0;
-  margin: 0px 0 45px;
-  color: #fff;
-  text-align: center;
-  background: url("../images/breadcrumbs.jpg") no-repeat  center top;
+.breadcrumbs {    
+    padding: 120px 0;
+    margin-bottom: 0;
+    margin: 0px 0 45px;
+    color: #fff;
+    text-align: center;
+    background-size: cover !important;
+    background-position: right !important;
+    background: url(https://res.cloudinary.com/dn3s8lyeh/image/upload/v1559951410/16836356_1349054021826110_2977918811385533463_o.jpg) no-repeat center top;
   .current-name {
      color: #222222;
     display: block;
@@ -1533,7 +1537,7 @@ legend {
       padding: 0 12px ;
       &:after{display:none !important;}
       &:not(:last-child)::before {
-         color: #999999;
+         color: #022e5b;
         content: "|";
         display: inline-block;
         height: 5px;
@@ -1545,14 +1549,14 @@ legend {
       a{
         display: block;
         text-decoration: none;
-        color: #999999;
+        color: #022e5b;
          font-weight: normal;
 
       }
 
       strong {
         font-weight: normal;
-        color: #999999;
+        color: #022e5b;
       }
 
   
@@ -1961,16 +1965,33 @@ legend {
 
 /* ---------------------------------------------------------- j-styles ---------------------------------------------------------- */
 
-/*HEADER*/
-@media only screen and (min-width: 768px) {
+* > :not(i){
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+}
+
+
+/* ----------------------------------- HEADER ----------------------------------- */
+@media only screen and (min-width: 769px) {
     .logo-wrapper .logo-content img {
         width: 100% !important;
     }
+
+    .logo-header-responsive-2, .icons-header-responsive-2{
+        display: none;
+    }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 425px) and (max-width: 768px) {
     .logo-wrapper .logo-content img {
-        width: 42% !important;
+        width: 50% !important;
+    }
+
+    .logo-header-responsive-1, .icons-header-responsive-1, .search-mobile{
+        display: none;
+    }
+
+    .logo-header-responsive-2{
+        text-align: -webkit-center;
     }
 }
 
@@ -1978,12 +1999,281 @@ legend {
     margin: 14px 0 !important;
 }
 
+@media (min-width: 320px) and (max-width: 425px) {
+    .logo-header-responsive-1, .icons-header-responsive-1, .search-mobile{
+        display: none;
+    }
 
-/*FOOTER*/
+    .logo-header-responsive-2{
+        text-align: -webkit-center;
+    }
+
+    .row-items{
+        display: flex;
+        align-items: center;
+    }
+    .navigation-mobile-container{
+        padding-top: 6px;
+    }
+
+    .logo-wrapper .logo-content img {
+        width: 70% !important;
+    }
+
+    .icons-header-responsive-2{
+        padding-top: 15px; 
+    }
+}
+
+.sticky-nav{
+    position: fixed;
+    top: -1px;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    height: 85px;
+    transition: 1s ease;
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+
+/* ----------------------------------- BOX CATEGORIAS EN NAV ----------------------------------- */
+.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu li:nth-child(1) .sm_megamenu_dropdown_6columns {
+    background-image: url(http://www.ferrioni.com/wp-content/uploads/2018/12/cropped-BIMBINI-2_01.png) !important;
+    background-repeat: no-repeat, repeat !important;
+    background-position: right !important;
+    background-position-y: inherit !important;
+    height: 215px !important;
+}
+
+.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu li:nth-child(2) .sm_megamenu_dropdown_6columns {
+    background-image: url(http://www.ferrioni.com/wp-content/uploads/2019/01/slide1.jpg) !important;
+    background-repeat: no-repeat, repeat !important;
+    background-size: cover !important;
+    background-position: right !important;
+    height: 215px !important;
+}
+
+.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu li:nth-child(3) .sm_megamenu_dropdown_6columns {
+    background-image: url(http://www.ferrioni.com/wp-content/uploads/2018/12/cropped-KIDS-PICCOLINO_01.png) !important;
+    background-repeat: no-repeat, repeat !important;
+    background-position: right !important;
+    background-position-y: inherit !important;
+    height: 215px !important;
+}
+
+
+.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu li:nth-child(4) .sm_megamenu_dropdown_6columns {
+    background-image: url(http://www.ferrioni.com/wp-content/uploads/2019/01/slide2.jpg) !important;
+    background-repeat: no-repeat, repeat !important;
+    background-size: cover !important;
+    background-position: right !important;
+    height: 215px !important;
+}
+
+
+/* ----------------------------------- FOOTER ----------------------------------- */
 .footer-container .footer-block .logo {
     text-align: -webkit-center !important;
 }
 
 .footer-container .footer-block .logo img {
     width: 260px;
+}
+
+.about-footer{
+    display: none !important;
+}
+
+@media only screen and (min-width: 1024px) {
+    .box-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.block-socials .logo img {
+    width: 250px;
+    margin: 25px;
+}
+
+
+/*accordion*/
+
+@media (min-width: 768px){
+    #colapsable .tab input{
+        display: none;
+    }
+}
+
+@media (max-width: 767px){
+
+    /* Accordion  styles */
+    #colapsable .footer-block-title{
+      padding-top: 10px !important;
+      background: white;
+    }
+    #colapsable .tab {
+      position: relative;
+      margin-bottom: 1px;
+      width: 100%;
+      overflow: hidden;
+    }
+    #colapsable input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+    #colapsable label {
+      position: relative;
+      display: block;
+      padding: 0 0 0 1em;
+      background: #eeeeee;
+      font-weight: bold;
+      line-height: 3;
+      cursor: pointer;
+    }
+    #colapsable .tab-content {
+      max-height: 0;
+      overflow: hidden;
+      background: #ffffff !important;
+      -webkit-transition: max-height .35s;
+      -o-transition: max-height .35s;
+      transition: max-height .35s;
+    }
+    #colapsable .tab-content p {
+      margin: 1em;
+    }
+    /* :checked */
+    #colapsable input:checked ~ .tab-content {
+      max-height: 10em;
+    }
+    /* Icon */
+    #colapsable label::after {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 3em;
+      height: 3em;
+      line-height: 3;
+      text-align: center;
+      -webkit-transition: all .35s;
+      -o-transition: all .35s;
+      transition: all .35s;
+    }
+    #colapsable input[type=checkbox] + label::after {
+        content: '\f0d7';
+        font-family: FontAwesome;
+        margin-top: -10px;
+        font-size: 18px;
+    }
+    #colapsable input[type=radio] + label::after {
+        content: '\f0d7';
+        font-family: FontAwesome;
+        margin-top: -10px;
+        font-size: 18px;
+    }
+    #colapsable input[type=checkbox]:checked + label::after {
+        content: '\f0de';
+        font-family: FontAwesome;
+        margin-top: -10px;
+        font-size: 18px;
+    }
+    #colapsable input[type=radio]:checked + label::after {
+        content: '\f0de';
+        font-family: FontAwesome;
+        margin-top: -10px;
+        font-size: 18px;
+    }
+
+}
+
+/* ----------------------------------- LISTADOS DE PRODUCTOS ----------------------------------- */
+.products-grid .item .item-inner .box-image .bottom-action .btn-action:hover {
+    background-color: #009B3E !important;
+}
+
+.toolbar.toolbar-products .modes .modes-mode.mode-grid:hover:before, .toolbar.toolbar-products .modes .modes-mode.mode-grid.active:before {
+    color: #009B3E !important;
+}
+
+.toolbar.toolbar-products .modes .modes-mode.mode-list:hover:before, .toolbar.toolbar-products .modes .modes-mode.mode-list.active:before {
+    color: #009B3E !important;
+}
+
+.products-grid .item .item-inner .box-info .product-name a{
+    color: rgb(29, 29, 29) !important
+}
+
+.breadcrumbs .container {
+    width: 400px !important;
+    background-color: #ffffff8a !important;
+}
+
+/* ----------------------------------- DETALLE PRODUCTO CONFIGURABLE ----------------------------------- */
+.tab-label-customtab{
+    display: none;
+}
+
+
+/* ----------------------------------- DETALLE PRODUCTO ----------------------------------- */
+#block-shipping, .cart-summary .summary.title{
+    display: none !important;
+}
+
+
+/* ----------------------------------- BREADCRUMBS ----------------------------------- */
+@media (min-width: 426px ) and (max-width: 768px){
+    .breadcrumbs {
+        background-size: contain !important;
+        padding: 110px 0 !important;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .breadcrumbs {
+        background-size: contain !important;
+        padding: 40px 0 !important;
+    }
+}
+
+/* ----------------------------------- MINI-CART ----------------------------------- */
+.block-minicart .block-content > .actions .viewcart {
+    background-color: #009B3E !important;
+}
+
+.block-minicart .block-content > .actions .viewcart:hover {
+    background-color: #009b3ec9 !important;
 }
