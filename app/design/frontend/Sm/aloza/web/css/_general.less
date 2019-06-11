@@ -759,7 +759,7 @@ mark, .mark {
             line-height:40px;
             background: #ff3232;
             &.checkout {
-                background: #cccccc;
+                background: #022E5B;
                 color: #fff;
             }
            
@@ -1987,6 +1987,17 @@ legend {
     margin: 14px 0 !important;
 }
 
+
+.sticky-nav{
+    position: fixed;
+    top: -1px;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    height: 72px;
+    transition: .5s ease;
+}
+
 /* ----------------------------------- BOX CATEGORIAS EN NAV ----------------------------------- */
 .sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu li:nth-child(1) .sm_megamenu_dropdown_6columns {
     background-image: url(http://www.ferrioni.com/wp-content/uploads/2018/12/cropped-BIMBINI-2_01.png) !important;
@@ -2115,25 +2126,25 @@ legend {
     #colapsable input[type=checkbox] + label::after {
         content: '\f0d7';
         font-family: FontAwesome;
-        margin-top: -7px;
+        margin-top: -10px;
         font-size: 18px;
     }
     #colapsable input[type=radio] + label::after {
         content: '\f0d7';
         font-family: FontAwesome;
-        margin-top: -7px;
+        margin-top: -10px;
         font-size: 18px;
     }
     #colapsable input[type=checkbox]:checked + label::after {
         content: '\f0de';
         font-family: FontAwesome;
-        margin-top: -7px;
+        margin-top: -10px;
         font-size: 18px;
     }
     #colapsable input[type=radio]:checked + label::after {
         content: '\f0de';
         font-family: FontAwesome;
-        margin-top: -7px;
+        margin-top: -10px;
         font-size: 18px;
     }
 
@@ -2174,8 +2185,25 @@ legend {
 
 
 /* ----------------------------------- BREADCRUMBS ----------------------------------- */
-@media only screen and (max-width: 768px){
+@media (min-width: 426px ) and (max-width: 768px){
     .breadcrumbs {
         background-size: contain !important;
+        padding: 110px 0 !important;
     }
+}
+
+@media only screen and (max-width: 425px){
+    .breadcrumbs {
+        background-size: contain !important;
+        padding: 40px 0 !important;
+    }
+}
+
+/* ----------------------------------- MINI-CART ----------------------------------- */
+.block-minicart .block-content > .actions .viewcart {
+    background-color: #009B3E !important;
+}
+
+.block-minicart .block-content > .actions .viewcart:hover {
+    background-color: #009b3ec9 !important;
 }
