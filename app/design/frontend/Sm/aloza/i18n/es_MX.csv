@@ -3105,8 +3105,8 @@ Items,Elementos,module,Magento_Multishipping
 "Your order number is: ","Su número de orden es: ",module,Magento_Multishipping
 "Continue Shopping","Continuar Comprando",module,Magento_Multishipping
 "No New Relic Application ID configured, cannot continue with Cron Event reporting","No hay un ID de Aplicación New Relic configurada, no se puede continuar reportando con Evento Cron",module,Magento_NewRelicReporting
-"The New Relic integration requires the newrelic-php5 agent, which is not installed. More 
-                        information on installing the agent is available <a target=""_blank"" href=""%1"">here</a>.","La integración New Relic requiere el agente newrelic-php5, el cual no está instalado. Más 
+"The New Relic integration requires the newrelic-php5 agent, which is not installed. More
+                        information on installing the agent is available <a target=""_blank"" href=""%1"">here</a>.","La integración New Relic requiere el agente newrelic-php5, el cual no está instalado. Más
                         información sobre la instalación del agente está disponible <a target=""_blank"" href=""%1"">aquí</a>.",module,Magento_NewRelicReporting
 "Delete Selected Problems","Borrar Problemas Seleccionados",module,Magento_Newsletter
 "Unsubscribe Selected","Desuscribir Seleccionados",module,Magento_Newsletter
@@ -7913,7 +7913,7 @@ User,Usuario,module,Magento_Paypal
                                             <strong>De a sus ventas un impulso al anunciar financiamiento.</strong><br/>PayPal ayuda a convertir visitantes en compradores con financiamiento
                                             de Crédito PayPal. Sus clientes tienen más tiempo para pagar, mientras recibe pagos de inmediato – sin costo adicional para usted.
                                             Use los cintillos gratuitos de PayPal que le permiten anunciar el financiamiento de Crédito PayPal como opción de pagocuando sus clientes compren con PayPal.
-                                            El Programa de Anuncios de PayPal ha mostrado que genera compras adicionales además de incrementar el promedio de compras en un 15% 
+                                            El Programa de Anuncios de PayPal ha mostrado que genera compras adicionales además de incrementar el promedio de compras en un 15%
                                             o más. <a href=""https://financing.paypal.com/ppfinportal/content/forrester"" target=""_blank"">Ver Detalles</a>.
                 ",module,Magento_Paypal
 "Basic Settings - PayPal Payments Advanced","Configuraciones Básicas - Pagos PayPal Avanzados",module,Magento_Paypal
