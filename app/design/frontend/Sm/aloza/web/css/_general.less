@@ -2140,6 +2140,11 @@ legend {
     margin: 25px;
 }
 
+@media (max-width: 450px) {
+    .block-socials .logo img{
+        display: none;
+    }
+}
 
 /*accordion*/
 
@@ -2308,18 +2313,34 @@ legend {
     padding: 5px 0px !important;    
 }
 
-// @media only screen and (max-width: 768px){
-//     main#maincontent .columns.col2-layout .container .row{
-//         display: flex;
-//         flex-direction: column-reverse;
-//     }
-
-//     main#maincontent .columns.col2-layout .container ol.products.list.items.product-items.row {
-//         display: inherit !important;
-//         flex-direction: unset !important;
-//     }
-// }
 
 .swatch-attribute.swatch-layered.color_imagen .swatch-option-link-layered .swatch-option{
     width: 20px !important;
+}
+
+
+/* ----------------------------------- PAGE-CONTACT-MAP----------------------------------- */
+@media only screen and (min-width: 768px) {
+    .contacto-map{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 767px) {
+    .contacto-map iframe{
+        width: 400px !important;
+        height: 350px !important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 699px) {
+    .contacto-map iframe{
+        width: 100% !important;
+        height: 400px !important;
+    }
+}
+
+.contacto-map p{
+    font-size: medium;
 }
