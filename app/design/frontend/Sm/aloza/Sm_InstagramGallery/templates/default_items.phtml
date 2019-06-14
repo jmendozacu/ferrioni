@@ -43,7 +43,7 @@ $count           = count($json_output['data']);
 			<?php } ?>
                 <div class="instagram_users">
                     <div class="img_users">
-                        <a title="<?php echo $json_output['data'][$i]['user']['full_name']; ?>" data-fancybox-group="next" data-target="<?php echo $target; ?>" data-href="<?php echo $json_output['data'][$i]['link'] ?>" class="instagram_gallery_image gallery_image" rel="" href="<?php echo $json_output['data'][$i]['images']['low_resolution']['url'] ?>?taken-by=<?php echo $json_output['data'][$i]['user']['username'] ?>">
+                        <a title="<?php echo $json_output['data'][$i]['user']['full_name']; ?>" data-fancybox-group="next" data-target="<?php echo $target; ?>" data-href="<?php echo $json_output['data'][$i]['link'] ?>" class="instagram_gallery_image gallery_image" rel="" href="https://www.instagram.com/ferrioni_mx/"> <!--Se quitó segmento de código-->
                             <img class="image_users" src="<?php echo $json_output['data'][$i]['images']['low_resolution']['url'] ?>" title="<?php echo $json_output['data'][$i]['user']['full_name']; ?>" alt="<?php echo $json_output['data'][$i]['user']['full_name']; ?>"/>
                         </a>
                     </div>
