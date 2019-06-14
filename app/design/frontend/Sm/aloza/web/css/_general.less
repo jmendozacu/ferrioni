@@ -2323,7 +2323,7 @@ legend {
 @media only screen and (min-width: 768px) {
     .contacto-map{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 }
 
@@ -2343,4 +2343,62 @@ legend {
 
 .contacto-map p{
     font-size: medium;
+}
+
+/* ----------------------------------- PAGE-CART ----------------------------------- */
+.action.continue.bt-cart-continue, .action.clear.bt-cart-clear{
+    background-color: #022e5b9e !important;
+}
+
+.action.continue.bt-cart-continue:hover, .action.clear.bt-cart-clear:hover{
+    background-color: #022e5bb8 !important;
+    transition: .5s ease;
+}
+
+.action.update.bt-cart-update{
+    background-color: #009B3E !important;
+}
+
+.action.update.bt-cart-update:hover{
+    background-color: #009b3ec9 !important;
+    transition: .5s ease;
+}
+
+.cart-container .checkout-methods-items .action.primary.checkout:hover {
+    background-color: #022e5bb8 !important;
+    transform: scale(1.01);
+    transition: .5s ease;
+}
+
+
+/* ----------------------------------- PAGE-CHECKOUT ----------------------------------- */
+#shipping-method-buttons-container button.button.action.continue.primary {
+    background-color: #022e5b !important;
+}
+
+#shipping-method-buttons-container button.button.action.continue.primary:hover {
+    background-color: #022e5bb8 !important;
+}
+
+#checkout-payment-method-load .payment-methods .payment-group .actions-toolbar .action.primary.checkout, .action.primary.continue {
+    background-color: #022e5b !important;
+}
+
+#checkout-payment-method-load .payment-methods .payment-group .actions-toolbar .action.primary.checkout, .action.primary.continue {
+    background-color: #022e5bb8 !important;
+}
+
+
+/* ----------------------------------- PAGE-LOGIN SIGNUP ----------------------------------- */
+#login-form .fieldset.login .actions-toolbar .primary, .block.block-new-customer .actions-toolbar .primary, form.create.account.form-create-account .actions-toolbar .primary{
+    background-color: #022e5b !important;
+    float: right !important;
+}
+
+#login-form .fieldset.login .actions-toolbar .primary:hover, .block.block-new-customer .actions-toolbar .primary:hover, form.create.account.form-create-account .actions-toolbar .primary:hover{
+    background-color: #022e5bb8 !important;
+}
+
+#login-form .fieldset.login .actions-toolbar .secondary, form.create.account.form-create-account .actions-toolbar .secondary{
+    float: left !important;
 }
