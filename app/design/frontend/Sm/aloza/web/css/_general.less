@@ -2468,15 +2468,316 @@ legend {
     padding-bottom: 50px;
 }
 
-@media only screen and (min-width:1024px){
-    .block.sm-filter-products.wrapper-filter-products {
-        background-image: url(https://res.cloudinary.com/dn3s8lyeh/image/upload/v1560789560/kisspng-abstract-art-graphic-design-border-abstract-5b327fbce2ca31.3176357015300361569289.png) !important;
+// @media only screen and (min-width:1024px){
+//     .block.sm-filter-products.wrapper-filter-products {
+//         background-image: url(https://res.cloudinary.com/dn3s8lyeh/image/upload/v1560789560/kisspng-abstract-art-graphic-design-border-abstract-5b327fbce2ca31.3176357015300361569289.png) !important;
+//     }
+// }
+
+// @media (min-width:768px) and (max-width:1023px){
+//     .block.sm-filter-products.wrapper-filter-products {
+//         background-image: url(https://res.cloudinary.com/dn3s8lyeh/image/upload/v1560789560/kisspng-abstract-art-graphic-design-border-abstract-5b327fbce2ca31.3176357015300361569289.png) !important;
+//         background-size: contain !important;
+//     }
+// }
+
+
+
+/* ---------------------------------------- STYLES PAGES / BOUTIQUES & OUTLETS ---------------------------------------- */
+
+.par-maps article.location {
+    padding: 0 20px;
+}
+
+/* RESPONSIVE STYLES */
+@media only screen and (min-width:1025px) {
+    .par-maps {
+        display: flex;
+        margin: 50px -5px;
+        width: 100%;
+    }
+
+    .box-map-1 {
+        display: flex;
+        width: 50%;
+    }
+
+    .box-map-2 {
+        display: flex;
+        width: 50%;
+    }
+
+    .map.map-1 {
+        margin-bottom: 70px;
+    }
+
+    #ferrioni-maps input:checked ~ .tab-content {
+        max-height: 400em;
     }
 }
 
-@media (min-width:768px) and (min-width:1023px){
-    .block.sm-filter-products.wrapper-filter-products {
-        background-image: url(https://res.cloudinary.com/dn3s8lyeh/image/upload/v1560789560/kisspng-abstract-art-graphic-design-border-abstract-5b327fbce2ca31.3176357015300361569289.png) !important;
-        background-size: contain !important;
+@media (min-width:580px) and (max-width:1024px){
+    .par-maps {
+        display: inherit;
+        margin: 50px -5px;
+        width: 100%;
     }
+
+    .box-map-1 {
+        display: flex;
+        margin: 30px 0px;
+        width: 100%;
+    }
+
+    .box-map-2 {
+        display: flex;
+        width: 100%;
+    }
+
+    #ferrioni-maps input:checked ~ .tab-content {
+        max-height: 180em;
+    }
+
+    #ferrioni-maps .tab-collapsable input[type=checkbox] + label::after {
+        content: '\f0d7';
+        font-family: FontAwesome;
+        margin-top: -14px;
+        font-size: 21px;
+    }
+
+    #ferrioni-maps .tab-collapsable input[type=checkbox]:checked + label::after {
+        content: '\f0de';
+        font-family: FontAwesome;
+        margin-top: -10px;
+        font-size: 21px;
+    }
+
+    .map.map-1 {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media only screen and (max-width:579px){
+    .par-maps {
+        display: inherit;
+        margin: 50px -5px;
+        width: 100%;
+    }
+
+    .box-map-1 {
+        display: inherit;
+        margin: 30px 0px;
+        width: 100%;
+    }
+
+    .box-map-2 {
+        display: inherit;
+        width: 100%;
+    }
+
+    #ferrioni-maps input:checked ~ .tab-content {
+        max-height: 1222em;
+    }
+
+    #ferrioni-maps .tab-collapsable input[type=checkbox] + label::after {
+        content: '\f0d7';
+        font-family: FontAwesome;
+        margin-top: -14px;
+        font-size: 21px;
+    }
+
+    #ferrioni-maps .tab-collapsable input[type=checkbox]:checked + label::after {
+        content: '\f0de';
+        font-family: FontAwesome;
+        margin-top: -10px;
+        font-size: 21px;
+    }
+
+    .map.map-1 {
+        margin-bottom: 30px;
+    }
+
+}
+
+.container-zone .tabs label{
+    border: none !important;
+}
+
+/*-------------------------------*/
+/* FUNCIONALIDAD PARA TABS ZONA METROPOLITANA y INTERIOR DE LA REPUBLICA */
+#ferrioni-maps .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: space-evenly;
+}
+
+#ferrioni-maps .tabs label {
+    order: 1;
+    display: block;
+    padding: 10px 10px;
+    margin-right: 1px;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    font-weight: bold;
+    transition:ease 0.3s;
+}
+
+#ferrioni-maps .tabs .tab {
+    order: 99; 
+    flex-grow: 1;
+    width: 90%;
+    display: none;
+    padding: 10px;
+    background: #fff;
+    font-size: 14px;
+}
+
+#ferrioni-maps .tabs input[type="radio"] {
+    display: none;
+}
+
+#ferrioni-maps .tabs input[type="radio"]:checked + label {
+    background: #fff;
+    border-top: #009B3E8C solid 1px;
+    border-left: #009B3E8C solid 1px;
+    border-right:#009B3E8C solid 1px;
+    color: #009B3E;
+    padding: 20px 22px 0px !important;
+    margin: 0 20px !important;
+}
+
+#ferrioni-maps .tabs input[type="radio"]:checked + label + .tab {
+    margin-top: 15px;
+    display: block;
+}
+
+@media (max-width: 45em) {
+#ferrioni-maps .tabs .tab,
+#ferrioni-maps .tabs label {
+    order: initial;
+}
+
+#ferrioni-maps .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+}
+
+    @media (min-width:90px) and (max-width:900px){
+        #ferrioni-maps .tabs label.zona{
+            font-size:15px;
+            border-top: rgba(93, 93, 93, 0.295) solid 1px;
+            border-left: rgba(93, 93, 93, 0.295) solid 1px;
+            border-right: rgba(93, 93, 93, 0.295) solid 1px;
+        } 
+
+        #ferrioni-maps .tabs input[type="radio"]:checked + label{
+            -webkit-box-shadow: 0px -6px 15px -5px #009B3E65;
+            -moz-box-shadow: 0px -6px 15px -5px #009B3E65;
+            box-shadow: 0px -6px 15px -5px #009B3E65;
+            display: block;
+            background-color: transparent;
+        }
+
+        #ferrioni-maps .tabs input[type="radio"]:checked + label + .tab {
+            border-top: none;
+            display: block;
+        }
+    }
+}
+
+
+
+/*-------------------------------*/
+    /* Accordion  styles */
+#ferrioni-maps .footer-block-title{
+    padding-top: 10px !important;
+    background: white;
+}
+
+#ferrioni-maps .tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#ferrioni-maps input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+#ferrioni-maps label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    background: #ffffff;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#ferrioni-maps .tab-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #ffffff !important;
+    -webkit-transition: max-height .5s;
+    -o-transition: max-height .5s;
+    transition: max-height .5s;
+}
+
+#ferrioni-maps .tab-content p {
+    margin: 1em;
+}
+
+/* :checked */
+/* #ferrioni-maps input:checked ~ .tab-content {
+max-height: 1222em;;
+} */
+
+/* Icon */
+#ferrioni-maps label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .45s;
+    -o-transition: all .45s;
+    transition: all .45s;
+}
+
+#ferrioni-maps .tab-collapsable input[type=checkbox] + label::after {
+    content: '\f0d7';
+    font-family: FontAwesome;
+    margin-top: -10px;
+    font-size: 18px;
+}
+
+#ferrioni-maps .tab-collapsable input[type=radio] + label::after {
+    content: '\f0d7';
+    font-family: FontAwesome;
+    margin-top: -10px;
+    font-size: 18px;
+}
+
+#ferrioni-maps .tab-collapsable input[type=checkbox]:checked + label::after {
+    content: '\f0de';
+    font-family: FontAwesome;
+    margin-top: -10px;
+    font-size: 18px;
+}
+
+#ferrioni-maps .tab-collapsable input[type=radio]:checked + label::after {
+    content: '\f0de';
+    font-family: FontAwesome;
+    margin-top: -10px;
+    font-size: 18px;
 }
