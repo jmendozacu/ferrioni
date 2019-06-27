@@ -2033,13 +2033,15 @@ legend {
 
 @media (min-width:426px) and (max-width:600px){
     .sticky-nav{
-        height: 70px !important;
+        height: auto !important;
+        padding-bottom: 8px !important;
     }
 }
 
 @media (min-width:320px) and (max-width:425px){
     .sticky-nav{
-        height: 60px !important;
+        height: auto !important;
+        padding-bottom: 8px !important;
     }
 }
 
@@ -2049,7 +2051,8 @@ legend {
     width: 100%;
     background-color: white;
     z-index: 999;
-    height: 87px;
+    height: auto !important;
+    padding-bottom: 8px !important;
     transition: .3s ease;
     -webkit-box-shadow: 0px 2px 4px 0px rgba(125, 125, 125, 0.42);
     -moz-box-shadow: 0px 2px 4px 0px rgba(125, 125, 125, 0.42);
@@ -2515,7 +2518,7 @@ li.opc-progress-bar-item._complete:before,.opc-progress-bar-item_complete:before
 
 /* ---------------------------------------- STYLES SEARCH / RESPONSIVE ---------------------------------------- */
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:769px) {
     .search-bottom-nav {
         display: none;
     }
@@ -2523,18 +2526,21 @@ li.opc-progress-bar-item._complete:before,.opc-progress-bar-item_complete:before
 
 
 .search-bottom-nav {
-    float: right;
-    margin-bottom: 10px
+    float: right !important;
+    margin-bottom: 10px!important;
+    width: 98% !important;
+    text-align: -webkit-right !important;
 }
 
+
 .search-bottom-nav .field.search {
-    width: 166px;
-    opacity: 1;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(221, 221, 221);
-    border-image: initial;
-    background: rgb(255, 255, 255);
+    width: 100% !important;
+    opacity: 1 !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgb(221, 221, 221) !important;
+    border-image: initial !important;
+    background: rgb(255, 255, 255) !important;
 }
 
 
