@@ -2223,7 +2223,7 @@ legend {
     }
     /* :checked */
     #colapsable input:checked ~ .tab-content {
-      max-height: 10em;
+      max-height: 23em;
     }
     /* Icon */
     #colapsable label::after {
@@ -2511,6 +2511,31 @@ li.opc-progress-bar-item._complete:before,.opc-progress-bar-item_complete:before
 //     }
 // }
 
+
+
+/* ---------------------------------------- STYLES SEARCH / RESPONSIVE ---------------------------------------- */
+
+@media only screen and (min-width:768px) {
+    .search-bottom-nav {
+        display: none;
+    }
+}
+
+
+.search-bottom-nav {
+    float: right;
+    margin-bottom: 10px
+}
+
+.search-bottom-nav .field.search {
+    width: 166px;
+    opacity: 1;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    border-image: initial;
+    background: rgb(255, 255, 255);
+}
 
 
 /* ---------------------------------------- STYLES PAGES / BOUTIQUES & OUTLETS ---------------------------------------- */
