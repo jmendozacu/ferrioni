@@ -8613,3 +8613,4 @@ Delete,Borrar,module,Magento_Wishlist
 "Please enter a value less than or equal to {0}.","Por favor ingrese un valor menor o igual que {0}."
 "Please enter a value greater than or equal to {0}.","Por favor ingrese un valor mayor o igual a {0}."
 "Minimum length of this field must be equal or greater than %1 symbols. Leading and trailing spaces will be ignored.","La longitud mínima de este campo debe ser igual o mayor que %1 caracteres. Los espacios iniciales y finales serán ignorados."
+"Search here...","Buscar producto"

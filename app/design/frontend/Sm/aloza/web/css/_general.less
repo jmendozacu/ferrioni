@@ -2297,6 +2297,16 @@ legend {
     background-color: #ffffff8a !important;
 }
 
+.category-product.products.wrapper.list.products-list .item.respl-item-list.product.product-item .product-item-info .bottom-action .action.tocart.btn-cart,
+.category-product.products.wrapper.list.products-list .item.respl-item-list.product.product-item .product-item-info .bottom-action .action.tocart.btn-cart:hover {
+    background-color: #022e5b !important;
+}
+/**/
+.category-product.products.wrapper.list.products-list .item.respl-item-list.product.product-item .product-item-info .bottom-action .action.towishlist.btn-action.link-wishlist:hover,
+.category-product.products.wrapper.list.products-list .item.respl-item-list.product.product-item .product-item-info .bottom-action .action.tocompare.btn-action.link-compare{
+    background-color: #009B3E !important;
+}
+
 /* ----------------------------------- DETALLE PRODUCTO CONFIGURABLE ----------------------------------- */
 .tab-label-customtab{
     display: none;
@@ -2580,28 +2590,37 @@ li.opc-progress-bar-item._complete:before,.opc-progress-bar-item_complete:before
 }
 
 @media only screen and (max-width: 768px){
-.col-lg-3.col-md-3.sidebar-container .sidebar.sidebar-additional .block.sm-filter-products{
-    display: none;
+    .col-lg-3.col-md-3.sidebar-container .sidebar.sidebar-additional .block.sm-filter-products{
+        display: none;
+    }
 }
 
+.col-lg-3.col-md-3.sidebar-container .sidebar.sidebar-additional .block.block-compare .empty{
+    padding-top: 10px;
+    padding: 5px !important;
+    color: #000000c7 !important;
+    background-color: #8080801a !important;
+}
+
+.col-lg-3.col-md-3.sidebar-container .sidebar.sidebar-additional .block.sm-filter-products .pre-text {
+    color: #000000 !important;
 }
 
 /*test*/
 a.sm_megamenu_nodrop:hover .sm_megamenu_title_lv-2 {
     background-color: #022f5b1c;
-    //width: 20%;
+    width: 20%;
     padding: 3px 8px;
 }
 
 a.sm_megamenu_nodrop:hover .sm_megamenu_title_lv-2 {
-    animation-name:ejemploAnimacion;
-    animation-duration:1s;
+    animation-name:widthBackground;
+    animation-duration:.7s;
     animation-delay:0s
 }
 
-@keyframes ejemploAnimacion{
+@keyframes widthBackground{
     0%{ width:0px }
-    50%{ width:10% }
     100%{ width:20% }
   }
 
@@ -2610,6 +2629,14 @@ a.sm_megamenu_nodrop:hover .sm_megamenu_title_lv-2 {
 
 .par-maps article.location {
     padding: 0 20px;
+}
+
+#ferrioni-maps .container-zone .map.map-1 h1 {
+    color: #000000c7 !important;
+}
+
+#ferrioni-maps .container-zone .tab-collapsable .par-maps h3 {
+    color: #000000c7 !important;
 }
 
 /* RESPONSIVE STYLES */
