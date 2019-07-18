@@ -9,7 +9,10 @@
     ],
     "require": {
         "magento/product-community-edition": "2.2.3",
-        "composer/composer": "@alpha"
+        "composer/composer": "@alpha",
+        "openpay/magento2-cards": "dev-master",
+        "openpay/magento2-stores": "dev-master",
+        "openpay/magento2-banks": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.2.0",
