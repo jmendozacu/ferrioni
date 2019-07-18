@@ -8599,3 +8599,4 @@ Delete,Borrar,module,Magento_Wishlist
 "Account Information","Información de Cuenta",theme,frontend/Magento/luma
 "Address Book","Libreta de Direcciones",theme,frontend/Magento/luma
 "Search here...","Buscar producto"
+"This is a required field.","Este es un campo obligatorio."
