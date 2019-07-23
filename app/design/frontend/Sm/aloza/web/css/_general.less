@@ -1966,12 +1966,51 @@ legend {
 
 /* ---------------------------------------------------------- j-styles ---------------------------------------------------------- */
 
-* > :not(i){
+* > :not(i) {
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+}
+// #maincontent > :not(i), .page-footer > :not(i){
+//     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+// }
+
+// .header-bottom {
+//     font-family: 'Nanum Gothic', sans-serif !important;
+// }
+
+// @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+
+/* ----------------------------------- HEADER ----------------------------------- */
+
+.header-style-1 .header-top {
+    background: #022e5b !important;
+    color: #ffff !important;
+}
+
+.header-style-1 .header-top .fa {
+    color: #ffff !important;
 }
 
 
-/* ----------------------------------- HEADER ----------------------------------- */
+
+@media (min-width: 1200px){
+    .logo-header.logo-header-responsive-1 {
+        width: 22% !important;
+    }
+
+    .header-style-1 .header-bottom .sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu > li > .sm_megamenu_head {
+        font-size: 96% !important;
+        font-family: 'Nanum Gothic', sans-serif !important;
+    }
+
+    .header-style-1 .header-bottom .header-search:hover .search-wrapper #search_mini_form .field.search {
+        width: 130px !important;
+    }
+
+    .header-style-1 .header-bottom .header-search .search-wrapper #search_mini_form .field.search {
+        padding-left: 8px;
+    }
+}
+
 @media only screen and (min-width: 769px) {
     .logo-wrapper .logo-content img {
         width: 100% !important;
@@ -2121,6 +2160,16 @@ legend {
     background-position-y: inherit !important;
     height: 240px !important;
 }
+
+.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu li:nth-child(2) .sm_megamenu_dropdown_6columns .sm_megamenu_head_item .sm_megamenu_title:nth-child(1) {
+    display: flex !important;
+}
+
+.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu li:nth-child(2) .sm_megamenu_dropdown_6columns .sm_megamenu_head_item .sm_megamenu_title:nth-child(2),
+.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu li:nth-child(2) .sm_megamenu_dropdown_6columns .sm_megamenu_head_item .sm_megamenu_title:nth-child(3),
+.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu li:nth-child(2) .sm_megamenu_dropdown_6columns .sm_megamenu_head_item .sm_megamenu_title:nth-child(4) {
+    width: 23% !important
+} 
 
 .sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu li:nth-child(3) .sm_megamenu_dropdown_6columns {
     background-image: url(/pub/media/img-ferrioni/f-bimbini.png) !important;
@@ -2616,7 +2665,7 @@ li.opc-progress-bar-item._complete:before,.opc-progress-bar-item_complete:before
 /*test*/
 a.sm_megamenu_nodrop:hover .sm_megamenu_title_lv-2 {
     background-color: #022f5b1c;
-    width: 20%;
+    width: 100px;
     padding: 3px 8px;
 }
 
@@ -2628,7 +2677,7 @@ a.sm_megamenu_nodrop:hover .sm_megamenu_title_lv-2 {
 
 @keyframes widthBackground{
     0%{ width:0px }
-    100%{ width:20% }
+    100%{ width:100px }
   }
 
 
@@ -2938,4 +2987,12 @@ max-height: 1222em;;
     font-family: FontAwesome;
     margin-top: -10px;
     font-size: 18px;
+}
+
+a#sm_megamenu_23 {
+    pointer-events: none;
+}
+
+a#sm_megamenu_35 {
+    pointer-events: none;
 }
