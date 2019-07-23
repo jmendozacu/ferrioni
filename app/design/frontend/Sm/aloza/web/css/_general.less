@@ -1966,12 +1966,38 @@ legend {
 
 /* ---------------------------------------------------------- j-styles ---------------------------------------------------------- */
 
-* > :not(i){
+#maincontent > :not(i), .page-footer > :not(i){
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif !important;
 }
 
+.header-bottom {
+    font-family: 'Nanum Gothic', sans-serif !important;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
 
 /* ----------------------------------- HEADER ----------------------------------- */
+
+.header-style-1 .header-top {
+    background: #022e5b !important;
+    color: #ffff !important;
+}
+
+.header-style-1 .header-top .fa {
+    color: #ffff !important;
+}
+
+@media (min-width: 1200px){
+    .logo-header.logo-header-responsive-1 {
+        width: 22% !important;
+    }
+
+    .header-style-1 .header-bottom .sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu > li > .sm_megamenu_head {
+        font-size: 98% !important;
+        font-family: 'Nanum Gothic', sans-serif !important;
+    }
+}
+
 @media only screen and (min-width: 769px) {
     .logo-wrapper .logo-content img {
         width: 100% !important;
