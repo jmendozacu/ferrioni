@@ -17,5 +17,9 @@
                 <argument name="template" xsi:type="string">Sm_ShopBy::filter.phtml</argument>
             </action>
         </referenceBlock>
+        <referenceBlock name="breadcrumbs" remove="true" />
+        <referenceBlock name="category.image" remove="true" />
+        <block class="Sm\Aloza\Block\Html\Banners" name="banners" as="banners"/>
+        <move element="banners" destination="page.top" after="breadcrumbs"/>
     </body>
 </page>
