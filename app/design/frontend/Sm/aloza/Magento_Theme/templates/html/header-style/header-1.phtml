@@ -2,12 +2,15 @@
 	<div class="header-top">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 language-currency-top">
+			<div class="col-sm-4 language-currency-top">
 				<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('block-contact-header')->toHtml(); ?>
 				<?php echo $block->getChildHtml('language-header'); ?>
 				<?php echo $block->getChildHtml('currency-header'); ?>
 			</div>
-			<div class="col-sm-6 hidden-xs about-header">
+			<div class="col-sm-4">
+				<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('promo-header-top')->toHtml(); ?>
+			</div>
+			<div class="col-sm-4 hidden-xs about-header">
 				<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('block-about-header')->toHtml(); ?>
 			</div>
 		</div>
