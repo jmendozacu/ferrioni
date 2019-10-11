@@ -7,7 +7,10 @@
 				<?php echo $block->getChildHtml('language-header'); ?>
 				<?php echo $block->getChildHtml('currency-header'); ?>
 			</div>
-			<div class="col-sm-8 hidden-xs about-header">
+			<div class="col-sm-4">
+				<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('promo-header-top')->toHtml(); ?>
+			</div>
+			<div class="col-sm-4 hidden-xs about-header">
 				<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('block-about-header')->toHtml(); ?>
 			</div>
 		</div>

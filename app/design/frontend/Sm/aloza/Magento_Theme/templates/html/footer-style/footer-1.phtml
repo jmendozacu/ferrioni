@@ -48,6 +48,7 @@ $_config = $this->helper('Sm\Aloza\Helper\Data');
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
+					
 					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 copyright-footer">
 						<?php if($_config->getAdvanced('custom_copyright')){ ?>
 							<address><?php echo $_config->getAdvanced('copyright_content') ?></address>
@@ -55,10 +56,11 @@ $_config = $this->helper('Sm\Aloza\Helper\Data');
 							<address><?php /* @escapeNotVerified */ echo $block->getCopyright() ?></address>
 						<?php } ?>
 					</div>
-					
+
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-payment">
 						<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('payment-footer')->toHtml(); ?>
 					</div>
+					
 				</div>
 			</div>
 		</div>
