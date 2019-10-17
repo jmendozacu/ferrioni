@@ -8600,3 +8600,5 @@ Delete,Borrar,module,Magento_Wishlist
 "Address Book","Libreta de Direcciones",theme,frontend/Magento/luma
 "Search here...","Buscar producto"
 "This is a required field.","Este es un campo obligatorio."
+"You must login first!","¡Debes iniciar sesión primero!"
+"My Wishlist","Mi lista de deseos"
