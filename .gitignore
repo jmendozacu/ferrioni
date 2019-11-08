@@ -66,3 +66,7 @@ atlassian*
 /generated/*
 !/generated/.htaccess
 .DS_Store
+
+/composer.lock
+/pub/media/*
+
