@@ -46,6 +46,29 @@
 	</div>
 </div>
 
+<?php
+function sf_display_popup(){
+if ($('body').hasClass('slidershow-home')) {
+?>
+<script>
+   jQuery(document).ready(function($) {
+           $.cookieBar();
+               setTimeout(function(){
+                    //var site_url = '<?php echo home_url(); ?>';
+                   if($.cookie('SFPopup') == null || $('body').hasClass('home')){
+                       // alert(site_url);
+                           $('#newsletter-popup').modal('show');
+                       }else{
+                           $('#newsletter-popup').modal('hide');
+                       }
+               }, 3000);
+       });
+</script>
+<?php
+   }
+}
+?>
+
 <script type="text/javascript">
 	require([
 		'jquery',
