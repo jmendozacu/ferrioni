@@ -10,11 +10,13 @@
     "require": {
         "magento/product-community-edition": "2.2.3",
         "composer/composer": "@alpha",
+        "mageplaza/module-ajax-layered-navigation": "^1.0",
+        "magepal/magento2-checkout-success-misc-script": "^1.1",
+        "kiwicommerce/module-admin-activity": "^1.0",
         "openpay/magento2-cards": "dev-master",
         "openpay/magento2-stores": "dev-master",
         "openpay/magento2-banks": "dev-master",
-        "mageplaza/module-ajax-layered-navigation": "^1.0",
-        "magepal/magento2-checkout-success-misc-script": "^1.1"
+        "qbo/module-paypalplusmx": "^2.3"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.2.0",
